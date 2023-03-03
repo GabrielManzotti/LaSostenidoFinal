@@ -1,0 +1,63 @@
+.section-navbar{
+    width: 100%;
+    height: 100px;
+    background-color: grey;
+}
+
+.bgHeader {
+    background-color: black;
+
+}
+
+.marginLogo {
+
+    margin-left: 15px;
+}
+
+.bgNavBar{
+    background-color: black !important
+}
+
+.div-navbar {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.div-iconShoppingCart{
+    padding: 10px;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.icon-shoppingCart{
+    color:white;
+    height: 30%;
+    width: 30% 
+    
+}
+
+.display-line{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.display-dropdown{
+    display: flex;
+    justify-content: center !important;
+}
+
+.dropdown-menu .dropdown-item{
+ font-size: 12px;
+}

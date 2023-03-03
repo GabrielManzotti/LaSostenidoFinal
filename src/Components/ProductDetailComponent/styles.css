@@ -1,0 +1,49 @@
+.section-detail-component{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center ;
+    align-content: space-around;
+    border-top: 1px solid #e5e5e5;
+    height: 100%;
+}
+
+.titulo-brand{
+    margin-top: 10px;
+    font-size: 30px;
+    color: #4c4a4a;
+    width: 100%;
+    
+}
+
+.precio-div{
+    margin-top: 20px;
+    font-size: 150%;
+    font-weight: 400;
+    color:black;
+}
+
+.description-div{
+    margin-top: 20px;
+    font-size: 120%;
+    font-weight: 400;
+   
+}
+
+.button-cart{
+    margin-top: 20px;
+}
+
+.product-quantity{
+    margin-top: 30px;
+}
+
+.largeDescription-div{
+    margin-top: 30px;
+}
+
+.graduationDescription-div{
+    margin-top:40px;
+    padding-left: 10%;
+}

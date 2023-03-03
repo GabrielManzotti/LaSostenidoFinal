@@ -1,0 +1,101 @@
+
+  .container-item {
+    padding: 50px 0;
+    display: grid;
+    max-width: 100%;
+    grid-gap: 100px;
+    margin: 50px auto 0;
+    width: 95%;
+    grid-auto-rows: 320px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  
+  .card {
+    position: relative;
+    width: 100%;
+    height: 120%;
+    padding: 30px 20px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+  
+    /* background: radial-gradient(circle at 50% 0%, rgb(48, 51, 107) 45%, rgb(255, 255, 255) 36%) */
+  
+  }
+  
+  .card img {
+    display: block;
+    width: 180px;
+    max-height: 200px;
+    position: relative;
+    margin: 20px auto;
+  }
+  
+  .titleMovie {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .average {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .hide {
+    color: transparent;
+    font-size: xx-small;
+  
+  }
+  
+  .types {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 40px 0;
+  }
+  
+  .hp span,
+  .types span {
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+  }
+  
+  .types span {
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: #ffffff;
+    background-color: rgb(48, 51, 107);
+  }
+  
+  .sectionTituloPokemon {
+    height: 100px;
+    width: 100%;
+    margin-top: 100px;
+  }
+  
+  .sectionTipoPokemon {
+    height: 50px;
+    width: 100%;
+    margin-top: 100px;
+  }
+  
+  .sectionHabilidad {
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+  
+  }
+  
+  .sectionMovimientos {
+  
+    width: 100%;
+    height: 3000px;
+  
+  }
+  
+  .contenedorHabilidad {
+  
+    width: 100%;
+    height: 100%;
+  }

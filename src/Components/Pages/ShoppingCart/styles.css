@@ -1,0 +1,26 @@
+.section-shoppCart {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.table-shoppCart {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 1000px;
+}
+
+.table-shoppCart p{
+  width: 150%;
+}
+
+.summary-shoppCart {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 1000px;
+  margin-right: 50px;
+}

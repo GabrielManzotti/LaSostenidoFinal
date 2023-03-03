@@ -1,0 +1,17 @@
+.search-div{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+
+}
+
+
+
+.search-title{
+    font-size: 2.5rem;
+    font-weight: 400;
+    color:black;
+}
