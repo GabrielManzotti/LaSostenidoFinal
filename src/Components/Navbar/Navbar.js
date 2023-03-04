@@ -15,13 +15,14 @@ const Navbar = ({ categoria1, categoria2, categoria3 }) => {
   const { cart } = useContext(CartContext)
   const [quantity, setQuantity] = useState()
 
-    useEffect(() => {
+  useEffect(() => {
     const onClick = () => {
       let quantity = getQuantity(cart)
       setQuantity(quantity)
+
     }
     onClick()
-   },)
+  },)
 
   return (
     <>
@@ -41,7 +42,7 @@ const Navbar = ({ categoria1, categoria2, categoria3 }) => {
                   <NavLink to="/" className="dropdown-item">HOME </NavLink>
                   <NavLink to="/bebidas" className="dropdown-item">Bebidas </NavLink>
                   <NavLink to="/accesorios" className="dropdown-item">Accesorios </NavLink>
-                  </ul>
+                </ul>
               </li>
             </ul>
           </div>

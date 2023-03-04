@@ -8,7 +8,7 @@ const CartProvider = ({ children }) => {
 
   const [form, setform] = useState({});
 
-  const setFormPrueba = (values) => setform([]);
+  const setFormPrueba = () => setform([]);
 
 
   const clearCart = () => setCart([]);

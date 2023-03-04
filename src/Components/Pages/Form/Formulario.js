@@ -4,26 +4,41 @@ import TableShoppCart from "../../TableShoppCart/TableShoppCart"
 import { NavLink } from 'react-router-dom';
 import { useState, useContext } from 'react';
 import { CartContext } from '../../ItemContext/ItemContext';
-
+import { addDoc, collection, getFirestore } from 'firebase/firestore';
 
 
 
 const { Option } = Select;
-
-
+let order = {}
+let total = 0
+let idOrder = ""
 
 
 const Formulario = () => {
 
     const { form } = useContext(CartContext)
     const { setFormPrueba } = useContext(CartContext)
+    const { addProduct } = useContext(CartContext)
+    const { setForm } = useContext(CartContext)
+    const { cart } = useContext(CartContext)
+    const { getTotal } = useContext(CartContext)
+    const [orderid, setOrderId] = useState()
+
+
+
+    console.log(cart)
 
     const onFinish = (values) => {
-        setFormPrueba(values);
-        console.log(form)
-        console.log(values)
-    };
+        total = getTotal(cart)
+        order = { values, cart, total }
+        const db = getFirestore();
+        const ordersCollection = collection(db, 'orders');
+        addDoc(ordersCollection, order)
+            .then(({ id }) => console.log(id))
+        localStorage.setItem("order", JSON.stringify(order))
 
+
+    };
 
 
     return (
@@ -213,45 +228,95 @@ const Formulario = () => {
                             </Form.Item>
                         </Space>
                     </Form.Item>
-                    <Form.Item label="Piso:">
+
+                    <Form.Item label="Tipo de tarjeta">
+
+                        <Form.Item
+                            name={['TipoTarjeta']}
+                            style={{
+                                width: 600,
+                                marginBottom: 0,
+                            }}
+                            rules={[
+                                {
+                                    required: true,
+                                    message: 'Campo obligatorio',
+                                },
+                            ]}
+                        >
+                            <Select placeholder="Seleccioná el tipo de tarjeta">
+                                <Option value="TarjetaDebito">Tarjeta de débito</Option>
+                                <Option value="Buenos Aires">Tarjeta de crédito</Option>
+                            </Select>
+                        </Form.Item>
+
+                    </Form.Item>
+                    <Form.Item label="Marca de tarjeta">
+                        <Form.Item
+                            name={['MarcaTarjeta']}
+                            style={{
+                                width: 600,
+                                marginBottom: 0,
+                            }}
+                            rules={[
+                                {
+                                    required: true,
+                                    message: 'Campo obligatorio',
+                                },
+                            ]}
+                        >
+                            <Select placeholder="Seleccioná el tipo de tarjeta">
+                                <Option value="Visa">VISA</Option>
+                                <Option value="MasterCard">MasterCard</Option>
+                                <Option value="AmericanExpress">American Express</Option>
+                            </Select>
+                        </Form.Item>
+                    </Form.Item>
+                    <Form.Item label="Número de tarjeta">
                         <Space>
                             <Form.Item
-                                name="Piso"
+                                name="NroTarjeta"
                                 noStyle
                                 rules={[
                                     {
-                                        required: false,
+                                        required: true,
+                                        message: 'El campo es obligatorio'
                                     },
                                 ]}
                             >
                                 <Input
                                     style={{
-                                        width: 190,
+                                        width: 600,
                                     }}
-                                    placeholder="Piso"
+                                    placeholder="Número de tarjeta"
                                 />
                             </Form.Item>
                         </Space>
                     </Form.Item>
-                    <Form.Item label="Departamento:">
-                        <Space>
-                            <Form.Item
-                                name="Departamento"
-                                noStyle
-                                rules={[
-                                    {
-                                        required: false,
-                                    },
-                                ]}
-                            >
-                                <Input
-                                    style={{
-                                        width: 190,
-                                    }}
-                                    placeholder="Departamento"
-                                />
-                            </Form.Item>
-                        </Space>
+                    <Form.Item label="Cuotas">
+
+                        <Form.Item
+                            name={['Cuotas']}
+                            style={{
+                                width: 200,
+                                marginBottom: 0,
+                            }}
+                            rules={[
+                                {
+                                    required: true,
+                                    message: 'Campo obligatorio',
+                                },
+                            ]}
+                        >
+                            <Select placeholder="Seleccioná la cantidad de cuotas">
+                                <Option value="1">1</Option>
+                                <Option value="3">3</Option>
+                                <Option value="6">6</Option>
+                                <Option value="9">9</Option>
+                                <Option value="12"></Option>
+                            </Select>
+                        </Form.Item>
+
                     </Form.Item>
                     <Form.Item label=" " colon={false}>
                         <Button type="primary" htmlType="submit" onSubmit={onFinish}>

@@ -11,11 +11,7 @@ import ShoppingCart from './Components/Pages/ShoppingCart/ShoppingCart';
 import ItemListContainerBebidas from './Components/ItemListContainerBebidas/ItemListContainerBebidas';
 import Accesorios from './Components/Pages/Accesorios/Accesorios';
 import Formurlario from './Components/Pages/Form/Formulario';
-import Formpay from './Components/Pages/FormPay/Formpay';
-
-
-
-
+import Ticket from './Components/Pages/Ticket/Ticket';
 
 function App() {
   return (
@@ -32,7 +28,7 @@ function App() {
         <Route path="/bebidas" element={<Bebidas />} />
         <Route path="/accesorios" element={<Accesorios />} />
         <Route path="/formulario" element={<Formurlario />} />
-        <Route path="/pago" element={<Formpay />} />
+        <Route path="/ticket" element={<Ticket />} />
       </Routes>
     </Router>
   );
