@@ -9,11 +9,10 @@ import React from 'react'
 import Home from "../Pages/Home/Home";
 import SearchResults from "../Pages/SearchResults/SearchResults";
 import { useNavigate } from "react-router-dom";
-
+import "./styles.css"
 
 let selectedProduct = {}
 let userInput = ""
-
 
 function Search() {
     const navigate = useNavigate()
@@ -26,7 +25,6 @@ function Search() {
     };
 
     const onSubmit = (e) => {
-
         e.preventDefault();
         userInput = value
         navigate(`/search/${userInput}`)
@@ -34,11 +32,11 @@ function Search() {
     }
 
     return (
-        <div>
+        <div className="section-search">
 
             <form className="Form" onSubmit={onSubmit}  >
                 <TextField
-                    placeholder="Buscar usuario"
+                    placeholder="Buscar producto"
                     variant="outlined"
                     className="Textfield"
                     value={value}

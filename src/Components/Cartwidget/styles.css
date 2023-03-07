@@ -11,6 +11,10 @@
   align-items: center;
 }
 
+.circleShoppCart a {
+  color: black !important;
+}
+
 .color-shoppCartQuantity {
   font-weight: 500;
   font-size: 14px;

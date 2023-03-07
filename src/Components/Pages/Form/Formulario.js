@@ -1,10 +1,11 @@
 import { Button, Form, Input, Select, Space, Tooltip, Typography } from 'antd';
 import "./styles.css"
-import TableShoppCart from "../../TableShoppCart/TableShoppCart"
-import { NavLink } from 'react-router-dom';
+import ShoppCartSummary from '../../ShoppCartSummary/ShoppCartSummary';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { useState, useContext } from 'react';
 import { CartContext } from '../../ItemContext/ItemContext';
 import { addDoc, collection, getFirestore } from 'firebase/firestore';
+
 
 
 
@@ -23,29 +24,23 @@ const Formulario = () => {
     const { cart } = useContext(CartContext)
     const { getTotal } = useContext(CartContext)
     const [orderid, setOrderId] = useState()
+    const navigate = useNavigate();
 
-
-
-    console.log(cart)
-
+    let total = getTotal()
     const onFinish = (values) => {
         total = getTotal(cart)
         order = { values, cart, total }
         const db = getFirestore();
         const ordersCollection = collection(db, 'orders');
         addDoc(ordersCollection, order)
-            .then(({ id }) => console.log(id))
+            .then(({ id }) => console.log("id de la orden guardada en Firestore: ", id))
         localStorage.setItem("order", JSON.stringify(order))
-
-
+        navigate(`/ticket`)
     };
 
-
     return (
-
         <div className='section-form'>
-
-            <div>
+            <div className='form'>
                 <Form
                     name="complex-form"
                     onFinish={onFinish}
@@ -56,7 +51,7 @@ const Formulario = () => {
                         span: 16,
                     }}
                     style={{
-                        maxWidth: 600,
+                        maxWidth: 500,
                     }}
                 >
                     <Form.Item label="Nombres">
@@ -73,7 +68,7 @@ const Formulario = () => {
                             >
                                 <Input
                                     style={{
-                                        width: 600,
+                                        width: 500,
                                     }}
                                     placeholder="Nombres"
                                 />
@@ -95,7 +90,7 @@ const Formulario = () => {
                             >
                                 <Input
                                     style={{
-                                        width: 600,
+                                        width: 500,
                                     }}
                                     placeholder="Apellido"
                                 />
@@ -116,7 +111,7 @@ const Formulario = () => {
                             >
                                 <Input
                                     style={{
-                                        width: 600,
+                                        width: 500,
                                     }}
                                     placeholder="DNI"
                                 />
@@ -137,25 +132,45 @@ const Formulario = () => {
                             >
                                 <Input
                                     style={{
-                                        width: 600,
+                                        width: 500,
                                     }}
                                     placeholder="Teléfono"
                                 />
                             </Form.Item>
                         </Space>
                     </Form.Item>
+                    <Form.Item label="Email">
+                        <Space>
+                            <Form.Item
+                                name="Email"
+                                noStyle
+                                rules={[
+                                    {
+                                        required: true,
+                                        message: 'El campo es obligatorio'
+                                    },
+                                ]}
+                            >
+                                <Input
+                                    style={{
+                                        width: 500,
+                                    }}
+                                    placeholder="Ingresá tu email"
+                                />
+                            </Form.Item>
+                        </Space>
+                    </Form.Item>
                     <Form.Item label="Provincia">
-
                         <Form.Item
                             name={['Provincia']}
                             style={{
-                                width: 600,
+                                width: 500,
                                 marginBottom: 0,
                             }}
                             rules={[
                                 {
                                     required: true,
-                                    message: 'Province is required',
+                                    message: 'El campo es obligatorio',
                                 },
                             ]}
                         >
@@ -184,7 +199,6 @@ const Formulario = () => {
                                 <Option value="Tierra del Fuego">Tierra del Fuego</Option>
                             </Select>
                         </Form.Item>
-
                     </Form.Item>
                     <Form.Item label="Código Postal:">
                         <Space>
@@ -228,9 +242,7 @@ const Formulario = () => {
                             </Form.Item>
                         </Space>
                     </Form.Item>
-
                     <Form.Item label="Tipo de tarjeta">
-
                         <Form.Item
                             name={['TipoTarjeta']}
                             style={{
@@ -245,17 +257,16 @@ const Formulario = () => {
                             ]}
                         >
                             <Select placeholder="Seleccioná el tipo de tarjeta">
-                                <Option value="TarjetaDebito">Tarjeta de débito</Option>
-                                <Option value="Buenos Aires">Tarjeta de crédito</Option>
+                                <Option value="débito">Tarjeta de débito</Option>
+                                <Option value="crédito">Tarjeta de crédito</Option>
                             </Select>
                         </Form.Item>
-
                     </Form.Item>
                     <Form.Item label="Marca de tarjeta">
                         <Form.Item
                             name={['MarcaTarjeta']}
                             style={{
-                                width: 600,
+                                width: 500,
                                 marginBottom: 0,
                             }}
                             rules={[
@@ -286,7 +297,7 @@ const Formulario = () => {
                             >
                                 <Input
                                     style={{
-                                        width: 600,
+                                        width: 500,
                                     }}
                                     placeholder="Número de tarjeta"
                                 />
@@ -294,7 +305,6 @@ const Formulario = () => {
                         </Space>
                     </Form.Item>
                     <Form.Item label="Cuotas">
-
                         <Form.Item
                             name={['Cuotas']}
                             style={{
@@ -316,7 +326,6 @@ const Formulario = () => {
                                 <Option value="12"></Option>
                             </Select>
                         </Form.Item>
-
                     </Form.Item>
                     <Form.Item label=" " colon={false}>
                         <Button type="primary" htmlType="submit" onSubmit={onFinish}>
@@ -325,7 +334,16 @@ const Formulario = () => {
 
                     </Form.Item>
                 </Form>
-
+            </div>
+            <div className='div-total'>
+                <div className='total'>
+                    <div className='title'>
+                        <h5>Completá el formulario para finalizar la compra</h5>
+                    </div>
+                    <div className='total-quantity'>
+                        <p>Total del carrito: ${total},00</p>
+                    </div>
+                </div>
             </div>
         </div>
     )

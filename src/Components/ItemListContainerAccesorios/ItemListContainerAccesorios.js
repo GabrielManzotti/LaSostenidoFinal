@@ -11,16 +11,9 @@ import { db } from '../../Firebase/FirebaseConfig'
 import { collection, query, where, getDocs } from 'firebase/firestore'
 import { CartContext } from '../ItemContext/ItemContext'
 
-
 function ItemListContainerAccesorios(children, search) {
-
-
-
   const [products, setProducts] = useState([]);
-
   const { addProduct, cart } = useContext(CartContext)
-
-  console.log(cart)
 
   useEffect(() => {
     const getDrinks = async () => {
@@ -34,9 +27,6 @@ function ItemListContainerAccesorios(children, search) {
     }
     getDrinks()
   }, [])
-
-
-
   return (
     <div>
       <div className='section-itemListContainer '>

@@ -10,7 +10,6 @@ import { useContext, useEffect } from 'react';
 import { useState } from 'react';
 
 const Navbar = ({ categoria1, categoria2, categoria3 }) => {
-
   const { getQuantity } = useContext(CartContext)
   const { cart } = useContext(CartContext)
   const [quantity, setQuantity] = useState()
@@ -19,7 +18,6 @@ const Navbar = ({ categoria1, categoria2, categoria3 }) => {
     const onClick = () => {
       let quantity = getQuantity(cart)
       setQuantity(quantity)
-
     }
     onClick()
   },)
@@ -52,7 +50,6 @@ const Navbar = ({ categoria1, categoria2, categoria3 }) => {
           </div>
         </div>
       </nav>
-
     </>
   )
 }

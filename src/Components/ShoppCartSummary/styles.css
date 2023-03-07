@@ -1,50 +1,48 @@
-.section-detail-component{
-  display:flex;
+.section-detail-component {
+  display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  align-items: center ;
+  align-items: center;
   align-content: space-around;
-  border-top: 1px solid #e5e5e5;
-  height: 100%;
-  margin-top: 100px;
+  border: 1px solid #e5e5e5;
+  height: 30%;
+  padding: 20px;
 }
 
-.titulo-brand{
+.titulo-brand {
   margin-top: 10px;
   font-size: 30px;
   color: #4c4a4a;
   width: 100%;
-  
 }
 
-.precio-div{
+.precio-div {
   margin-top: 20px;
   font-size: 150%;
   font-weight: 400;
-  color:black;
+  color: black;
 }
 
-.description-div{
+.description-div {
   margin-top: 20px;
   font-size: 120%;
   font-weight: 400;
- 
 }
 
-.button-cart{
+.button-cart {
   margin-top: 20px;
 }
 
-.product-quantity{
+.product-quantity {
   margin-top: 30px;
 }
 
-.largeDescription-div{
+.largeDescription-div {
   margin-top: 30px;
 }
 
-.graduationDescription-div{
-  margin-top:40px;
+.graduationDescription-div {
+  margin-top: 40px;
   padding-left: 10%;
 }

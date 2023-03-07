@@ -10,6 +10,8 @@ import { NavLink } from "react-router-dom";
 function ShoppCartSummary() {
   const { cart } = useContext(CartContext)
   const [sum, setSum] = useState();
+  let cartLenght = cart.length
+  console.log(cartLenght)
 
   useEffect(() => {
     const recorre = () => {
@@ -18,21 +20,18 @@ function ShoppCartSummary() {
     };
     recorre()
   },)
-
   return (
     <div className='section-detail-component'>
       <div >
-
       </div>
       <div className='precio-div'>
-        FINALIZA LA COMPRA
+        {cartLenght > 0 ? <p>FINALIZÁ LA COMPRA</p> : <p>AÚN SIN PRODUCTOS</p>}
       </div>
       <div className='description-div'>
-        subtotal : ${sum}
-
+        {cartLenght > 0 ? <p>Subtotal : ${sum}</p> : null}
       </div>
       <div className='product-quantity'>
-        <NavLink to="/formulario"> <Button variant="contained" size="small">Finalizá la compra</Button></NavLink>
+        {cartLenght > 0 ? [<NavLink style={{ textDecoration: 'none' }} to="/formulario" > <Button variant="contained" className='button-decoration' size="small">Finalizá la compra</Button></NavLink>] : [<NavLink style={{ textDecoration: 'none' }} to="/">  <Button variant="contained" className='button-decoration' size="small">VOLVER A HOME</Button></NavLink>]}
       </div>
     </div>
   )

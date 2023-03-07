@@ -7,11 +7,7 @@ import { CardActionArea } from "@mui/material";
 import "./styles.css"
 
 const CardComponent = ({ products }) => {
-
-  
-
   return (
-    
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
         <CardMedia
@@ -30,10 +26,6 @@ const CardComponent = ({ products }) => {
         </CardContent>
       </CardActionArea>
     </Card>
-
-
-
   );
 };
-
 export default CardComponent;

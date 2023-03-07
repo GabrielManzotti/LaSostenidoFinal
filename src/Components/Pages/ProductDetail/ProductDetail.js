@@ -13,15 +13,10 @@ import { collection, query, where, getDocs } from 'firebase/firestore'
 
 
 const ProductDetail = () => {
-
   let productoSeleccionado = [{}]
-
   const [productArray, setProductsArray] = useState({});
   const [product, setProducts] = useState({});
-
   let { id } = useParams();
-
-  console.log(id)
 
   useEffect(() => {
     const getDrinks = async () => {
@@ -37,9 +32,7 @@ const ProductDetail = () => {
     getDrinks()
   }, [])
 
-
   return (
-
     <div className="section-detail">
       <div className='detail-content'>
         <div className='product-detail-card'>
@@ -56,9 +49,7 @@ const ProductDetail = () => {
         <LargeDescription data={product} />
       </div>
     </div>
-
   )
-
 }
 
 export default ProductDetail

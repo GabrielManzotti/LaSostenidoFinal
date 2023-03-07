@@ -8,7 +8,7 @@ export const mockedProducts = [
         stock: 100,
         image: "https://www.thecocktaildb.com/images/ingredients/Light%20Rum.png",
         imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/151%20proof%20rum.png?alt=media&token=53edeb8e-4d3e-49c3-8930-b297c20491ae",
-        largeDescription:"Un clásico ron blanco con notas distintivas de vainilla y almendra, elaborado en barriles de roble blanco y moldeado con una mezcla secreta de carbón vegetal para lograr una suavidad inconfundible."
+        largeDescription: "Un clásico ron blanco con notas distintivas de vainilla y almendra, elaborado en barriles de roble blanco y moldeado con una mezcla secreta de carbón vegetal para lograr una suavidad inconfundible."
     },
     {
         id: '1',
@@ -19,7 +19,7 @@ export const mockedProducts = [
         stock: 30,
         image: "https://www.thecocktaildb.com/images/ingredients/Bourbon.png",
         imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Bourbon.png?alt=media&token=4d8a28e4-dab4-44a6-b8ac-66d9f5990a59",
-        largeDescription:"El whiskey de bourbon Michter’s US·1 ha sido envejecido en barriles nuevos de madera americana tostados durante un periodo de al menos 8 años. Pertenece a una edición de lotes realmente pequeños, cada lote se compone de no más de 24 barriles cada uno, no dejando margen para mezclas e imperfecciones. Es un whiskey maravillosamente matizado, suave que refleja fielmente el espíritu de Kentucky."
+        largeDescription: "El whiskey de bourbon Michter’s US·1 ha sido envejecido en barriles nuevos de madera americana tostados durante un periodo de al menos 8 años. Pertenece a una edición de lotes realmente pequeños, cada lote se compone de no más de 24 barriles cada uno, no dejando margen para mezclas e imperfecciones. Es un whiskey maravillosamente matizado, suave que refleja fielmente el espíritu de Kentucky."
     },
     {
         id: '2',
@@ -40,7 +40,7 @@ export const mockedProducts = [
         price: 9000,
         stock: 12,
         image: "https://www.thecocktaildb.com/images/ingredients/Tequila.png",
-        imageFB:"https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Tequila.png?alt=media&token=c648f8fe-a6e2-45b8-9703-86b32be11080",
+        imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Tequila.png?alt=media&token=c648f8fe-a6e2-45b8-9703-86b32be11080",
         largeDescription: "Sierra Tequila Silver es elaborado bajo los estrictos requerimientos del Gobierno Mexicano en Guadalajara, en la destilería Sierra Unidas de C. V. La destilería utiliza agave azul cultivado en campos naturales de las tierras altas como base para el tequila."
     },
     {
@@ -51,8 +51,8 @@ export const mockedProducts = [
         price: 11000,
         stock: 2,
         image: "https://www.thecocktaildb.com/images/ingredients/Gin.png",
-        imageFB:"https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Gin.png?alt=media&token=e93e5ab9-bc66-4eff-b842-28bee7cef909",
-        largeDescription:"El paladar temprano es suavemente terroso y el suave pino reúne simultáneamente angélica, cardamomo, ralladura de limón, naranja dulce y enebro. Recibo indicios de productos botánicos que ni siquiera están aquí, como la nuez moscada. En boca es suave, graso y suavemente cálido. El final conduce a un suave cítrico y terroso."
+        imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Gin.png?alt=media&token=e93e5ab9-bc66-4eff-b842-28bee7cef909",
+        largeDescription: "El paladar temprano es suavemente terroso y el suave pino reúne simultáneamente angélica, cardamomo, ralladura de limón, naranja dulce y enebro. Recibo indicios de productos botánicos que ni siquiera están aquí, como la nuez moscada. En boca es suave, graso y suavemente cálido. El final conduce a un suave cítrico y terroso."
     },
     {
         id: '5',
@@ -62,8 +62,8 @@ export const mockedProducts = [
         price: 3000,
         stock: 200,
         image: "https://www.thecocktaildb.com/images/ingredients/Vodka.png",
-        imageFB:"https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Vodka.png?alt=media&token=22eba77a-0628-46dc-b1fc-c9d6969942ba",
-        largeDescription:"El Vodka Smirnoff Red Label con su grado alcohólico de sólo 37.5% es uno de los vodkas más suaves. Smirnoff es un tipo de vodka de origen ruso. Elaborado en la destilería homónima, fundada por Piotr Arsenieyevich Smirnov en 1864, es el vodka premium de mayor venta en el mundo."
+        imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Vodka.png?alt=media&token=22eba77a-0628-46dc-b1fc-c9d6969942ba",
+        largeDescription: "El Vodka Smirnoff Red Label con su grado alcohólico de sólo 37.5% es uno de los vodkas más suaves. Smirnoff es un tipo de vodka de origen ruso. Elaborado en la destilería homónima, fundada por Piotr Arsenieyevich Smirnov en 1864, es el vodka premium de mayor venta en el mundo."
     },
     {
         id: '6',
@@ -73,8 +73,8 @@ export const mockedProducts = [
         price: 800,
         stock: 500,
         image: "https://www.thecocktaildb.com/images/ingredients/Dr.%20Pepper.png",
-        imageFB:"https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Dr.%20Pepper.png?alt=media&token=1fbb4dbe-5ec3-47b6-89cf-2272f20ea930",
-        largeDescription:"Dr Pepper es una bebida gaseosa carbonata perteneciente a la empresa británica Cadbury y comercializada por primera vez en 1885. Con un intenso sabor a caramelo, se diferencia de otras bebidas similares como la Coca Cola en que no es “cola”, sino soda."
+        imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Dr.%20Pepper.png?alt=media&token=1fbb4dbe-5ec3-47b6-89cf-2272f20ea930",
+        largeDescription: "Dr Pepper es una bebida gaseosa carbonata perteneciente a la empresa británica Cadbury y comercializada por primera vez en 1885. Con un intenso sabor a caramelo, se diferencia de otras bebidas similares como la Coca Cola en que no es “cola”, sino soda."
     },
     {
         id: '7',
@@ -84,7 +84,7 @@ export const mockedProducts = [
         price: 1200,
         stock: 300,
         image: "https://www.thecocktaildb.com/images/ingredients/Cranberry%20Juice.png",
-        imageFB:"https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Cranberry%20Juice.png?alt=media&token=d83c364d-2163-4f11-9fd1-d087a636f185",
+        imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Cranberry%20Juice.png?alt=media&token=d83c364d-2163-4f11-9fd1-d087a636f185",
         largeDescription: "La marca Berry Company contiene jugos de frutas 100% naturales hechos con los mejores ingredientes. Estos jugos bajos en calorías están hechos con un edulcorante natural a base de hierbas y tenemos disponibles en 330 ml y 1L Disfrute de estos fantásticos jugos naturales."
     },
     {
@@ -95,8 +95,8 @@ export const mockedProducts = [
         price: 1800,
         stock: 500,
         image: "https://www.thecocktaildb.com/images/ingredients/Dry%20Vermouth.png",
-        imageFB:"https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Dry%20Vermouth.png?alt=media&token=32bf4e64-6013-4591-85ee-ee805974d735",
-        largeDescription:"El vermut seco es de origen francés y es el más amargo de los cuatro tipos de vermut (blanco, rojo, rosado y seco). Se elabora con vino blanco, azúcar y extracto de hierbas que se utilizan para infusionar."
+        imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Dry%20Vermouth.png?alt=media&token=32bf4e64-6013-4591-85ee-ee805974d735",
+        largeDescription: "El vermut seco es de origen francés y es el más amargo de los cuatro tipos de vermut (blanco, rojo, rosado y seco). Se elabora con vino blanco, azúcar y extracto de hierbas que se utilizan para infusionar."
     },
     {
         id: '9',
@@ -106,8 +106,8 @@ export const mockedProducts = [
         price: 800,
         stock: 500,
         image: "https://www.thecocktaildb.com/images/ingredients/Amaretto.png",
-        imageFB:"https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Amaretto.png?alt=media&token=f518eb5b-9720-4187-bcd0-5ccf6c26d93f",
-        largeDescription:"Es un licor de almendras maceradas en alcohol de vino. De gusto memorioso a la vez que astringente.El Amaretto di Saronno tiene la cualidad, debido a su sabor tan particular de poder tomarse solo o con hielo, luego de un postre.Dado que una de las características que tiene es de ser digestivo."
+        imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Amaretto.png?alt=media&token=f518eb5b-9720-4187-bcd0-5ccf6c26d93f",
+        largeDescription: "Es un licor de almendras maceradas en alcohol de vino. De gusto memorioso a la vez que astringente.El Amaretto di Saronno tiene la cualidad, debido a su sabor tan particular de poder tomarse solo o con hielo, luego de un postre.Dado que una de las características que tiene es de ser digestivo."
     },
     {
         id: '10',
@@ -117,8 +117,8 @@ export const mockedProducts = [
         price: 2800,
         stock: 500,
         image: "https://www.thecocktaildb.com/images/ingredients/151%20proof%20rum.png",
-        imageFB:"https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/151%20proof%20rum.png?alt=media&token=53edeb8e-4d3e-49c3-8930-b297c20491ae",
-        largeDescription:"Bacardi 151 es una marca discontinuada de ron de alto contenido alcohólico fabricado por Bacardi Limited de Hamilton, Bermudas. Recibe su nombre por su nivel de concentración de alcohol de 151 U.S. proof, es decir, 75,5 % de alcohol por volumen. Esto es mucho más alto que el ron típico, que tiene un promedio de alrededor de 35% a 40% de alcohol por volumen. Bacardí 151 se vendió en Estados Unidos y Canadá desde al menos 1963 hasta 2016, cuando se suspendió su producción"
+        imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/151%20proof%20rum.png?alt=media&token=53edeb8e-4d3e-49c3-8930-b297c20491ae",
+        largeDescription: "Bacardi 151 es una marca discontinuada de ron de alto contenido alcohólico fabricado por Bacardi Limited de Hamilton, Bermudas. Recibe su nombre por su nivel de concentración de alcohol de 151 U.S. proof, es decir, 75,5 % de alcohol por volumen. Esto es mucho más alto que el ron típico, que tiene un promedio de alrededor de 35% a 40% de alcohol por volumen. Bacardí 151 se vendió en Estados Unidos y Canadá desde al menos 1963 hasta 2016, cuando se suspendió su producción"
     },
     {
         id: '11',
@@ -128,8 +128,8 @@ export const mockedProducts = [
         price: 8000,
         stock: 500,
         image: "https://www.thecocktaildb.com/images/ingredients/Absolut%20citron.png",
-        imageFB:"https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Absolut%20citron%20(1).png?alt=media&token=18e1f8d5-b6b7-45f1-bc70-5fe8044bf314",
-        largeDescription:"Absolut Vodka tiene un sabor rico, suave y dulce, con el carácter distintivo del grano de trigo. Absolut Vodka es ideal para beberse solo con hielo bien frío y no está nada mal como base para cientos de bebidas y cócteles."
+        imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Absolut%20citron%20(1).png?alt=media&token=18e1f8d5-b6b7-45f1-bc70-5fe8044bf314",
+        largeDescription: "Absolut Vodka tiene un sabor rico, suave y dulce, con el carácter distintivo del grano de trigo. Absolut Vodka es ideal para beberse solo con hielo bien frío y no está nada mal como base para cientos de bebidas y cócteles."
     },
     {
         id: '12',
@@ -139,8 +139,8 @@ export const mockedProducts = [
         price: 180,
         stock: 100,
         image: "https://www.thecocktaildb.com/images/ingredients/lemon.png",
-        imageFB:"https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/lemon.png?alt=media&token=a887504b-878a-424f-838e-7cb21b1a4b9d",
-        largeDescription:"Limón por kilo"
+        imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/lemon.png?alt=media&token=a887504b-878a-424f-838e-7cb21b1a4b9d",
+        largeDescription: "Limón por kilo"
     },
     {
         id: '13',
@@ -150,8 +150,8 @@ export const mockedProducts = [
         price: 1000,
         stock: 500,
         image: "https://www.thecocktaildb.com/images/ingredients/Water.png",
-        imageFB:"https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Water.png?alt=media&token=8d236215-59f8-4bc9-8c86-6664dbfa704a",
-        largeDescription:"Agua purificada"
+        imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Water.png?alt=media&token=8d236215-59f8-4bc9-8c86-6664dbfa704a",
+        largeDescription: "Agua purificada"
     },
     {
         id: '14',
@@ -161,8 +161,8 @@ export const mockedProducts = [
         price: 8000,
         stock: 500,
         image: "https://www.thecocktaildb.com/images/ingredients/Absolut%20citron.png",
-        imageFB:"https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Absolut%20citron%20(1).png?alt=media&token=18e1f8d5-b6b7-45f1-bc70-5fe8044bf314",
-        largeDescription:"Absolut Vodka tiene un sabor rico, suave y dulce, con el carácter distintivo del grano de trigo. Absolut Vodka es ideal para beberse solo con hielo bien frío y no está nada mal como base para cientos de bebidas y cócteles."
+        imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Absolut%20citron%20(1).png?alt=media&token=18e1f8d5-b6b7-45f1-bc70-5fe8044bf314",
+        largeDescription: "Absolut Vodka tiene un sabor rico, suave y dulce, con el carácter distintivo del grano de trigo. Absolut Vodka es ideal para beberse solo con hielo bien frío y no está nada mal como base para cientos de bebidas y cócteles."
     },
     {
         id: '15',
@@ -172,11 +172,11 @@ export const mockedProducts = [
         price: 300,
         stock: 500,
         image: "https://www.thecocktaildb.com/images/ingredients/Orange%20Peel.png",
-        imageFB:"https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Orange%20Peel.png?alt=media&token=96c21831-4fcc-4bcb-a8be-b6ce11e91fd9",
-        largeDescription:"Naranja por kilo"
+        imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Orange%20Peel.png?alt=media&token=96c21831-4fcc-4bcb-a8be-b6ce11e91fd9",
+        largeDescription: "Naranja por kilo"
     },
     {
-        //Hasta acá se cargó en FB
+
         id: '16',
         brand: "Campari",
         description: "Campari",
@@ -184,9 +184,10 @@ export const mockedProducts = [
         price: 1300,
         stock: 500,
         image: "https://www.thecocktaildb.com/images/ingredients/Campari.png",
-        imageFB:"https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Campari.png?alt=media&token=166302bd-e01e-4e93-b0f5-5aa615e749d4",
-        largeDescription:"Hercampuri es una hierba que tradicionalmente ha sido utilizada para regular el metabolismo (Bussmann R. y col., 2008). Los nombres comunes se presentan en orden alfabético. colagogo y digestivo, y para prevenir la formación de los cálculos biliares (en infusión)."
+        imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Campari.png?alt=media&token=166302bd-e01e-4e93-b0f5-5aa615e749d4",
+        largeDescription: "Hercampuri es una hierba que tradicionalmente ha sido utilizada para regular el metabolismo (Bussmann R. y col., 2008). Los nombres comunes se presentan en orden alfabético. colagogo y digestivo, y para prevenir la formación de los cálculos biliares (en infusión)."
     },
+
     {
         id: '17',
         brand: "Polar",
@@ -195,8 +196,8 @@ export const mockedProducts = [
         price: 1300,
         stock: 500,
         image: "https://www.thecocktaildb.com/images/ingredients/Soda%20Water.png",
-        imageFB:"https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Soda%20Water.png?alt=media&token=8ecb2da5-6ec0-4a14-bd1b-10ce72c5ae04",
-        largeDescription:"Soda premium Polar"
+        imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Soda%20Water.png?alt=media&token=8ecb2da5-6ec0-4a14-bd1b-10ce72c5ae04",
+        largeDescription: "Soda premium Polar"
     },
     {
         id: '18',
@@ -206,8 +207,8 @@ export const mockedProducts = [
         price: 1300,
         stock: 500,
         image: "https://www.thecocktaildb.com/images/ingredients/Prosecco.png",
-        imageFB:"https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Prosecco.png?alt=media&token=023b957d-7473-452b-91ab-8432708ae1a5",
-        largeDescription:"El Prosecco es un vino espumoso de la región del Veneto, en Italia. Su nombre es también el nombre de la variedad de uvas (también llamadas 'Glera') utilizadas para su elaboración. Para su elaboración, se utiliza un método asequible llamado “Método del tanque”."
+        imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Prosecco.png?alt=media&token=023b957d-7473-452b-91ab-8432708ae1a5",
+        largeDescription: "El Prosecco es un vino espumoso de la región del Veneto, en Italia. Su nombre es también el nombre de la variedad de uvas (también llamadas 'Glera') utilizadas para su elaboración. Para su elaboración, se utiliza un método asequible llamado “Método del tanque”."
     },
     {
         id: '19',
@@ -217,8 +218,8 @@ export const mockedProducts = [
         price: 2300,
         stock: 500,
         image: "https://www.thecocktaildb.com/images/ingredients/Aperol.png",
-        imageFB:"https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Aperol.png?alt=media&token=32b055d2-b51e-420d-9c2b-e5473107fc17",
-        largeDescription:"El Aperol es una bebida alcohólica de origen italiano de baja graduación alcohólica, sus ingredientes incluyen naranja amarga, ruibarbo, gentiana, cinchona, entre otros. Aunque sabe y huele muy similar al Campari, el Aperol tiene una graduación alcohólica de 11%"
+        imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Aperol.png?alt=media&token=32b055d2-b51e-420d-9c2b-e5473107fc17",
+        largeDescription: "El Aperol es una bebida alcohólica de origen italiano de baja graduación alcohólica, sus ingredientes incluyen naranja amarga, ruibarbo, gentiana, cinchona, entre otros. Aunque sabe y huele muy similar al Campari, el Aperol tiene una graduación alcohólica de 11%"
     },
     {
         id: '20',
@@ -228,7 +229,7 @@ export const mockedProducts = [
         price: 2300,
         stock: 500,
         image: "https://www.thecocktaildb.com/images/ingredients/Lime%20Juice.png",
-        imageFB:"https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Lime%20Juice.png?alt=media&token=886b80e2-cf03-4a17-95b4-20be3e5f5339",
+        imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Lime%20Juice.png?alt=media&token=886b80e2-cf03-4a17-95b4-20be3e5f5339",
     },
     {
         id: '21',
@@ -238,7 +239,7 @@ export const mockedProducts = [
         price: 2300,
         stock: 500,
         image: "https://www.thecocktaildb.com/images/ingredients/Lime%20Juice.png",
-        imageFB:"https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Lime%20Juice.png?alt=media&token=886b80e2-cf03-4a17-95b4-20be3e5f5339",
+        imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Lime%20Juice.png?alt=media&token=886b80e2-cf03-4a17-95b4-20be3e5f5339",
     },
     {
         id: '21',
@@ -248,8 +249,9 @@ export const mockedProducts = [
         price: 2300,
         stock: 500,
         image: "https://www.thecocktaildb.com/images/ingredients/Lime%20Juice.png",
-        imageFB:"https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Lime%20Juice.png?alt=media&token=886b80e2-cf03-4a17-95b4-20be3e5f5339",
+        imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Lime%20Juice.png?alt=media&token=886b80e2-cf03-4a17-95b4-20be3e5f5339",
     },
+    //Hasta acá se cargó en FB
     {
         id: '22',
         brand: "Tropicana",
@@ -258,7 +260,7 @@ export const mockedProducts = [
         price: 1000,
         stock: 500,
         image: "https://www.thecocktaildb.com/images/ingredients/Lime%20Juice.png",
-        imageFB:"https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Lime%20Juice.png?alt=media&token=886b80e2-cf03-4a17-95b4-20be3e5f5339",
+        imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Lime%20Juice.png?alt=media&token=886b80e2-cf03-4a17-95b4-20be3e5f5339",
     },
     {
         id: '23',
@@ -268,7 +270,7 @@ export const mockedProducts = [
         price: 200,
         stock: 500,
         image: "https://www.thecocktaildb.com/images/ingredients/Lime%20Juice.png",
-        imageFB:"https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Lime%20Juice.png?alt=media&token=886b80e2-cf03-4a17-95b4-20be3e5f5339",
+        imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Lime%20Juice.png?alt=media&token=886b80e2-cf03-4a17-95b4-20be3e5f5339",
     },
     {
         id: '24',
@@ -278,7 +280,7 @@ export const mockedProducts = [
         price: 100,
         stock: 500,
         image: "https://www.thecocktaildb.com/images/ingredients/Mint.png",
-        imageFB:"https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Mint.png?alt=media&token=f6f97d51-38fe-46ea-b672-8745a7850244",
+        imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Mint.png?alt=media&token=f6f97d51-38fe-46ea-b672-8745a7850244",
     },
     {
         id: '25',
@@ -288,7 +290,7 @@ export const mockedProducts = [
         price: 100,
         stock: 500,
         image: "https://www.thecocktaildb.com/images/ingredients/Lime.png",
-        imageFB:"https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Lime.png?alt=media&token=e6148d75-7137-47f7-92dd-21d1245b9758",
+        imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Lime.png?alt=media&token=e6148d75-7137-47f7-92dd-21d1245b9758",
     },
     {
         id: '26',
@@ -298,8 +300,8 @@ export const mockedProducts = [
         price: 100,
         stock: 500,
         image: "https://www.thecocktaildb.com/images/ingredients/Ice.png",
-        imageFB:"https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Ice.png?alt=media&token=2b56d1dd-8c27-4890-9816-573d89c2f031",
-        largeDescription:"Gracias a la ausencia de burbujas en su interior y su tamaño (unos 42 mm de lado) aguantan más tiempo sin descongelarse que los caseros. Es más, los hielos industriales se desmineralizan para quitarle dureza y hacerlos aptos para el consumo."
+        imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Ice.png?alt=media&token=2b56d1dd-8c27-4890-9816-573d89c2f031",
+        largeDescription: "Gracias a la ausencia de burbujas en su interior y su tamaño (unos 42 mm de lado) aguantan más tiempo sin descongelarse que los caseros. Es más, los hielos industriales se desmineralizan para quitarle dureza y hacerlos aptos para el consumo."
     },
     {
         id: '27',
@@ -309,7 +311,7 @@ export const mockedProducts = [
         price: 100,
         stock: 500,
         image: "https://www.thecocktaildb.com/images/ingredients/Vanilla%20extract.png",
-        imageFB:"https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Vanilla%20extract.png?alt=media&token=bfcc9ebd-3807-4f70-914a-24320c083165",
+        imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Vanilla%20extract.png?alt=media&token=bfcc9ebd-3807-4f70-914a-24320c083165",
     },
     {
         id: '28',
@@ -319,7 +321,7 @@ export const mockedProducts = [
         price: 100,
         stock: 500,
         image: "https://www.thecocktaildb.com/images/ingredients/Irish%20cream.png",
-        imageFB:"https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Irish%20cream.png?alt=media&token=698be4d0-6c25-45f6-a5a8-c6128f714ba7",
+        imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Irish%20cream.png?alt=media&token=698be4d0-6c25-45f6-a5a8-c6128f714ba7",
     },
     {
         id: '29',
@@ -329,7 +331,7 @@ export const mockedProducts = [
         price: 100,
         stock: 500,
         image: "https://www.thecocktaildb.com/images/ingredients/Yoghurt.png",
-        imageFB:"https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Yoghurt.png?alt=media&token=878bfcd2-4fb6-4a06-a1fe-e6a319017702",  
+        imageFB: "https://firebasestorage.googleapis.com/v0/b/react-coder-2023.appspot.com/o/Yoghurt.png?alt=media&token=878bfcd2-4fb6-4a06-a1fe-e6a319017702",
     },
 
 

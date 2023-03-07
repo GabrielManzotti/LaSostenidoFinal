@@ -2,7 +2,6 @@ import React from 'react'
 import "./styles.css"
 
 function LargeDescription({ data }) {
-
     const dataLargeDescription = data[0]
     return (
         <div>
@@ -10,7 +9,7 @@ function LargeDescription({ data }) {
                 <p>Descripción</p>
             </div>
             <div className='body-description'>
-            {dataLargeDescription ? dataLargeDescription.largeDescription : null }
+                {dataLargeDescription ? dataLargeDescription.largeDescription : null}
             </div>
         </div>
     )

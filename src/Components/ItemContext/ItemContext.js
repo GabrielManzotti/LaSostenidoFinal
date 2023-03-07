@@ -10,7 +10,6 @@ const CartProvider = ({ children }) => {
 
   const setFormPrueba = () => setform([]);
 
-
   const clearCart = () => setCart([]);
 
   const isInCart = (id) =>
@@ -30,20 +29,15 @@ const CartProvider = ({ children }) => {
     return total
   };
 
-
-
   const addProduct = (item, quantity) => {
-    console.log(item, quantity)
     if (isInCart(item.id)) {
       setCart(cart.map(product => {
         return product.id === item.id ? { ...product, quantity: product.quantity + quantity } : product
       }));
-
     } else {
       setCart([...cart, { ...item, quantity }]);
     }
   }
-
   return (
     <CartContext.Provider
       value={{ clearCart, isInCart, removeProduct, addProduct, getQuantity, getTotal, cart, form, setFormPrueba }}

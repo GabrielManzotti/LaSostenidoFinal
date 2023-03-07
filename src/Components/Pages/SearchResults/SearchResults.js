@@ -15,14 +15,8 @@ import { collection, query, where, getDocs } from 'firebase/firestore'
 
 
 function SearchResults() {
-
-
   const [searchDataResult, setSearchDataResult] = useState({});
-
   let { id } = useParams();
-  console.log(id)
-
-
 
   useEffect(() => {
     const getDrinks = async () => {
@@ -46,7 +40,6 @@ function SearchResults() {
         <Search></Search>
       </div>
       {searchDataResult ? <ItemListContainerSearch search={searchDataResult} /> : null}
-
     </div>
   )
 }

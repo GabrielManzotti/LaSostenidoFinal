@@ -2,12 +2,9 @@ import { Descriptions } from 'antd';
 
 
 const GraduationDescription = ({ data }) => {
-
   const dataGraduation = data[0]
-
   return (
     <div>
-
       <Descriptions title="Características">
         {dataGraduation ? <Descriptions.Item label="Linea:"> {dataGraduation.brand} </Descriptions.Item> : null}
         {dataGraduation ? <Descriptions.Item label="Formato de venta:">Unidad</Descriptions.Item> : null}

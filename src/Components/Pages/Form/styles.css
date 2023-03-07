@@ -1,6 +1,39 @@
 .section-form {
   margin-top: 100px;
   display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding-left: 30px;
+  justify-content: flex-start;
+}
+
+.div-total {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.total {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  margin-right: 50px;
+}
+
+.title h5 {
+  font-weight: 600;
+}
+
+.total-quantity p {
+  font-weight: 500;
 }
