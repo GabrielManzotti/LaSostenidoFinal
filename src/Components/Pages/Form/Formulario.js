@@ -5,6 +5,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import { useState, useContext } from 'react';
 import { CartContext } from '../../ItemContext/ItemContext';
 import { addDoc, collection, getFirestore } from 'firebase/firestore';
+import TicketProducts from '../../ticketProducts/ticketProducts';
 
 
 
@@ -329,7 +330,7 @@ const Formulario = () => {
                     </Form.Item>
                     <Form.Item label=" " colon={false}>
                         <Button type="primary" htmlType="submit" onSubmit={onFinish}>
-                            Continuar al pago
+                            Finalizar compra
                         </Button>
 
                     </Form.Item>
@@ -342,6 +343,14 @@ const Formulario = () => {
                     </div>
                     <div className='total-quantity'>
                         <p>Total del carrito: ${total},00</p>
+                        <div className='contenedor-productos'>
+                            <p>PRODUCTOS</p>
+                            {cart.map((producto) => {
+                                return (
+                                    <TicketProducts product={producto} key={producto.brand} />
+                                )
+                            })}
+                        </div>
                     </div>
                 </div>
             </div>
