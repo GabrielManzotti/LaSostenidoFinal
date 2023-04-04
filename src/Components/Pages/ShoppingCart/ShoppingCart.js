@@ -10,8 +10,7 @@ import EmptyCart from "../../Utils/7077270.png"
 
 
 function ShoppingCart() {
-  const value = useSelector((state) => state.counter.value)
-  const products = useSelector((state) => state.addShopCart.value)
+
   const { cart } = useContext(CartContext)
   const { clearCart } = useContext(CartContext)
   let cartLenght = cart.length

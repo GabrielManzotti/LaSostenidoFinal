@@ -4,8 +4,6 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import "./styles.css"
 import { useSelector, useDispatch } from 'react-redux';
-import { increment, incrementByAmount } from "../../redux/features/Counter"
-import { addShopCart } from "../../redux/features/AddShoppCart"
 import { useState } from 'react';
 import { CartContext } from '../ItemContext/ItemContext';
 
@@ -21,11 +19,10 @@ const InputAgregarCarrito = ({ data }) => {
   };
   const onClick = () => {
     setproductQuantity(1)
-    // dispatch(incrementByAmount(1))
-    // dispatch(addShopCart(data))
+
     addProduct(data, productQuantity)
   }
-  const dispatch = useDispatch();
+
   return (
     <div>
       <div>
